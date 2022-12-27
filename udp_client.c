@@ -21,7 +21,7 @@ int main ()
 	{
 		//从控制台输入聊天消息
 		 printf("输入向服务器发送的消息：\n");
-		 //scanf("%s", msg);
+		 scanf("%s", msg);
 		
 		//2. 发送客户端请求
 	     bzero(&addr, sizeof(addr));
