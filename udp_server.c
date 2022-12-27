@@ -12,7 +12,7 @@ int main ()
 	struct sockaddr_in my_addr, cl_addr;
 	int addrlen = sizeof(cl_addr);
 	char buf[64] = {0};
-	char msg[64] = "hello client";
+	char msg[64] = {0};
 	
 	//1. 创建UDP socket
 	sock = socket(AF_INET,SOCK_DGRAM, 0);
@@ -40,7 +40,7 @@ int main ()
 		 
 		 //从控制台输入聊天消息
 		 printf("输入向客户端返回的消息：\n");
-		 //scanf("%s", msg);
+		 scanf("%s", msg);
 		 
 	     //4. 发送服务器应答
 	     sendto(sock, msg, strlen(msg), 0, (struct sockaddr *)&cl_addr, sizeof(cl_addr));
