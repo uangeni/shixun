@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
@@ -49,7 +48,7 @@ int main ()
 	
 	
 	return 0;
-=======
+
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
